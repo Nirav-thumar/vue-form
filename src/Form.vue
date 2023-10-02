@@ -12,6 +12,11 @@
     </div>
 
     <div>
+      <label for="dob">Birth Date : </label>
+      <input type="date" id="dob" v-model="formData.dob" />
+    </div>
+
+    <div>
       <label for="password">Password : </label>
       <input type="password" id="password" v-model="formData.password" />
     </div>
@@ -118,6 +123,7 @@ function handleFormSubmit() {
 const formData = reactive({
   fullName: '',
   email: '',
+  dob:'',
   password: '',
   message: '',
   houseRentAllowance: 'true',
